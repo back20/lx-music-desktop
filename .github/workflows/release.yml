@@ -178,7 +178,7 @@ jobs:
           npm run publish:linux:rpm
           npm run publish:linux:pacman
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GT_TOKEN }}
           BT_TOKEN: ${{ secrets.BT_TOKEN }}
 
       - name: Generate file MD5
