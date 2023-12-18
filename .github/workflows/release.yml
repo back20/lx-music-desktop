@@ -37,7 +37,7 @@ jobs:
   #     - name: Lint src code
   #       run: npm run lint
 
-  Windows:
+ Windows:
     name: Windows
     runs-on: windows-latest
     # needs: CheckCode
@@ -79,7 +79,7 @@ jobs:
           npm run publish:win7:7z:x64
           npm run publish:win7:7z:x86
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GT_TOKEN }}
           BT_TOKEN: ${{ secrets.BT_TOKEN }}
 
       - name: Generate file MD5
@@ -126,7 +126,7 @@ jobs:
         env:
           ELECTRON_CACHE: $HOME/.cache/electron
           ELECTRON_BUILDERCACHE: $HOME/.cache/electron-builder
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GT_TOKEN }}
           BT_TOKEN: ${{ secrets.BT_TOKEN }}
 
       - name: Generate file MD5
